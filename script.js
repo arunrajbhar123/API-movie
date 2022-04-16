@@ -3,7 +3,8 @@
 
 const API_KEY = 'api_key=763aad1b51ae4ed320afd3680c31c2fe';
 const BASE_URL = 'https:api.themoviedb.org/3';
-const API_URL = BASE_URL + '/discover/movie?sort_by=popularity.desc&' + API_KEY;
+const API_URL = BASE_URL + '/discover/movie?popularity&' + API_KEY;
+// https://api.themoviedb.org/3/movie/popular?api_key=763aad1b51ae4ed320afd3680c31c2fe&language=en-US&page=1
 // https://api.themoviedb.org/3/search/movie?api_key=763aad1b51ae4ed320afd3680c31c2fe&language=en-US&page=1&include_adult=false&query=ironman
 const SearchURL = BASE_URL + '/search/movie?' + API_KEY;
 const extra = 'https://image.tmdb.org/t/p/w500/';
