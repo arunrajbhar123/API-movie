@@ -16,9 +16,9 @@ error.append(imgerro)
 
 function ApiUrl(url) {
     fetch(url).then(function(res) {
-        return res.json();
+        return (res.json());
     }).then(function(res) {
-        ironman(res.results)
+        ironman((res.results));
         error.innerHTML = null;
     }).catch(function(err) {
         console.log(err)
