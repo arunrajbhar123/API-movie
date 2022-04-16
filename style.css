@@ -178,3 +178,22 @@
             background-position: right center;
         }
     }
+    /* page no css */
+    
+    .pages {
+        display: flex;
+        font-size: 25px;
+        color: #fff;
+        box-sizing: border-box;
+        background: rgb(67, 62, 63);
+        align-items: center;
+        padding: 12px;
+        justify-content: center;
+    }
+    
+    .pages p {
+        background: red;
+        margin-left: 15px;
+        padding: 12px 22px 12px 22px;
+        margin: 15px;
+    }
