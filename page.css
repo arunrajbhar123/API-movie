@@ -1,0 +1,55 @@
+.daya img {
+    width: 100%;
+    height: 420px;
+}
+
+.daya {
+    position: relative;
+}
+
+.namingpart {
+    background: rgb(0, 0, 0);
+    width: 75%;
+    position: absolute;
+    left: 12%;
+    top: 22em;
+    height: auto;
+    color: #fff;
+    padding: 22px;
+    border-radius: 15px;
+}
+
+.namingpart h1 {
+    margin-left: 10em;
+    position: absolute;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.namingpart img {
+    width: 300px;
+    height: 350px;
+    top: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.namingpart h3 {
+    position: absolute;
+    top: 5em;
+    width: 50%;
+    left: 18.5em;
+    color: rgb(211, 210, 210);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.namingpart i {
+    font-size: 45px;
+    position: absolute;
+    left: 92%;
+    color: rgb(255, 128, 0);
+    cursor: pointer;
+}
+
+.namingpart i:hover {
+    color: rgb(190, 107, 25)
+}

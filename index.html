@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OMDB MOVIE APP I</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/38f8edb008.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo-part">
+            <h1>
+                <a href="index.html">MOVIE APP I</a>
+            </h1>
+        </div>
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <input type="text" placeholder="Search movies...." id="searchmovi">
+                <button onclick="findmovies()" id="btn">Search</button>
+            </li>
+            <li>
+                <div class="dark-mode"></div>
+            </li>
+        </ul>
+    </nav>
+
+
+    <div class="top-padding"></div>
+    <div class="error"></div>
+    <div class="post-container" id="ironman"></div>
+    <script src="script.js"></script>
+    <!-- <script src="script2.js"></script> -->
+</body>
+
+</html>
