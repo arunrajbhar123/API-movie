@@ -54,7 +54,7 @@ function ironman(data) {
         rate.innerText = el.vote_average;
         let btnrec = document.createElement('p');
         btnrec.innerText = "Recommended";
-        if (rate.innerText > 8) {
+        if (rate.innerText > 8.5) {
             title.append(btnrec)
         }
         var ratestar = document.createElement('i');
