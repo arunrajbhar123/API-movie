@@ -11,6 +11,7 @@ const extra = 'https://image.tmdb.org/t/p/w500/';
 
 ApiUrl(API_URL)
 var error = document.querySelector(".error");
+error.setAttribute('class', 'terrror')
 let imgerro = document.createElement('img');
 
 
@@ -37,7 +38,7 @@ var appendMovies = document.querySelector("#ironman");
 
 function ironman(data) {
     appendMovies.innerHTML = null;
-
+    PageName.innerHTML = null
     data.map(function(el, i) {
 
         let box = document.createElement('div');
@@ -88,10 +89,11 @@ function findmovies() {
 var PageName = document.querySelector(".pages");
 var showpage = 'Page';
 var showNext = 'Next';
-PageName.append(showpage);
+
 var p1;
 
 function Nextage(page) {
+    PageName.append(showpage);
     for (var i = 1; i < page; i++) {
         if (i < 5) {
             p1 = document.createElement('p');
@@ -102,4 +104,5 @@ function Nextage(page) {
     PageName.append(showNext)
 }
 
+// https://api.themoviedb.org/3/search/movie?api_key=763aad1b51ae4ed320afd3680c31c2fe&language=en-US&page=1&include_adult=false&query=ironman
 // https://api.themoviedb.org/3/search/movie?api_key=763aad1b51ae4ed320afd3680c31c2fe&language=en-US&page=1&include_adult=false&query=ironman
