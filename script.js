@@ -2,7 +2,7 @@
 
 
 const API_KEY = 'api_key=763aad1b51ae4ed320afd3680c31c2fe';
-const BASE_URL = 'https:api.themoviedb.org/3';
+const BASE_URL = 'https://api.themoviedb.org/3';
 const API_URL = BASE_URL + '/discover/movie?popularity&' + API_KEY;
 // https://api.themoviedb.org/3/movie/popular?api_key=763aad1b51ae4ed320afd3680c31c2fe&language=en-US&page=1
 // https://api.themoviedb.org/3/search/movie?api_key=763aad1b51ae4ed320afd3680c31c2fe&language=en-US&page=1&include_adult=false&query=ironman
@@ -16,6 +16,7 @@ imgerro.src = 'https://m.filmfare.com/static/img/filmfare_pwa_404_page.jpg'
 error.append(imgerro)
 
 function ApiUrl(url) {
+    console.log(url)
     fetch(url).then(function(res) {
         return (res.json());
     }).then(function(res) {
